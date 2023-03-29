@@ -1,0 +1,39 @@
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.requesting-permission,
+.requesting-permission-error {
+  position: absolute;
+  inset: 0;
+  background-color: #292929;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+}
+
+.requesting-permission {
+  border: 2px solid lightskyblue;
+}
+
+.requesting-permission-error {
+  border: 2px solid lightcoral;
+}
+
+.requesting-permission-error > *,
+.requesting-permission > * {
+  margin: 0;
+}
